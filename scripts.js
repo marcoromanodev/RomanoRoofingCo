@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Initialize EmailJS with your user ID
+    emailjs.init('YOUR_EMAILJS_USER_ID');  // Replace 'YOUR_EMAILJS_USER_ID' with your actual user ID
+
     const contactForm = document.getElementById('contact-form');
     
     contactForm.addEventListener('submit', function(event) {
@@ -12,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert('Failed to send the message. Please try again.');
             });
     });
+});
+
 
     const mobileBar = document.getElementById('mobile-bar');
     const stickyOffset = mobileBar.offsetTop;
