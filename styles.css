@@ -1,0 +1,535 @@
+/* Reset and base styles */
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    background: #FF5733;
+    color: #000;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.top-bar a {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 0.9em;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.main-nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    padding: 0 15px;
+}
+
+/* Main Banner */
+.main-banner {
+    background: url('2.jpeg') no-repeat center center/cover; /* Background for the main banner */
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    position: relative;
+}
+
+.main-banner p {
+    font-size: 1.75em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+}
+
+.btn.primary-btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn.primary-btn:hover {
+    background: #0056b3;
+}
+
+/* Solutions Section */
+.solutions {
+    background: url('3.png') no-repeat center center/cover;
+    text-align: center;
+    padding: 40px 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #000;
+}
+
+.solution-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centers text */
+}
+
+.solution-item {
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better readability */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Optional: Blur the background behind the box for more clarity */
+    border-radius: 8px; /* Smooth corners */
+}
+
+.solution-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about {
+    position: relative; /* Ensures overlay and content stay together */
+    background: url('1.jpg') no-repeat center center/cover; /* Background for the about section */
+    text-align: center;
+    padding: 80px 20px; /* Increase padding for more height */
+    background-size: cover;
+    color: #fff; /* Change text color to white for better contrast */
+    font-family: 'Merriweather', serif; /* Apply Merriweather font */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center content */
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1; /* Ensure the overlay stays behind the text */
+}
+
+.about p {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the overlay */
+    font-size: 1.2em; /* Adjust the text size if needed */
+    color: #fff; /* Keep the text white for better readability */
+    line-height: 1.6; /* Improves readability */
+}
+
+
+
+/* Why Homeowners Choose Us Section */
+.why-choose-us {
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px; /* Add padding to top and bottom */
+    margin: 0 auto; /* Center content */
+}
+
+/* Heading adjustment */
+.why-choose-us h2 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* List container adjustments */
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ensure no margin */
+}
+
+/* Individual list items */
+.why-choose-us ul li {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.why-choose-us ul li i {
+    color: #FF5733;
+    margin-right: 10px;
+}
+
+/* Reliable Roofer Section */
+.reliable-roofer {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.reliable-roofer h2, .reliable-roofer h3 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+.reliable-roofer p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button Styles */
+.btn.secondary-btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn.secondary-btn:hover {
+    background: #0056b3;
+}
+
+/* Wrapper to center the button */
+.center-btn-wrapper {
+    text-align: center; /* Centers the button */
+    margin-top: 20px; /* Optional: Add margin above */
+}
+
+/* Projects Section */
+#projects {
+    text-align: center; /* Center the entire section */
+    padding: 40px 20px; /* Add padding for spacing */
+}
+
+#projects h2 {
+    text-align: center; /* Center the "Our Recent Projects" heading */
+    margin-bottom: 30px; /* Add space below the heading */
+}
+
+.project-gallery {
+    text-align: center; /* Center the entire gallery */
+    margin: 0 auto; /* Center the gallery on the page */
+}
+
+.project-gallery img {
+    width: 30%;
+    margin: 10px auto; /* Center each image */
+    display: block;
+}
+
+/* Testimonials Section */
+#testimonials {
+    text-align: center; /* Center the entire section */
+    padding: 40px 20px; /* Add padding for spacing */
+}
+
+#testimonials h2 {
+    text-align: center; /* Center the "What Our Clients Are Saying" heading */
+    margin-bottom: 30px; /* Add space below the heading */
+}
+
+.testimonial-slides {
+    text-align: center; /* Center all testimonials content */
+    margin: 0 auto;
+}
+
+.testimonial-slides p {
+    font-style: italic;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center; /* Ensure centered text */
+}
+
+/* Carousel styling */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; /* Full width of the parent */
+    overflow: hidden; /* Prevent any overflow on the sides */
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 90%;
+    max-width: 800px; /* Limit the width on larger screens */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+    width: 33%; /* Show 2-3 images per view */
+    margin: 0;
+}
+
+/* Adjusting button visibility */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Place buttons directly next to the carousel images */
+.prev-btn {
+    left: 0; /* Position the button at the left edge of the carousel */
+}
+
+.next-btn {
+    right: 0; /* Position the button at the right edge of the carousel */
+}
+
+/* Responsiveness for the carousel */
+@media (max-width: 768px) {
+    .carousel {
+        width: 95%;
+    }
+
+    .carousel-img {
+        width: 90%;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    text-align: center; /* Center the contact section */
+    margin: 0 auto; /* Ensure it centers within the page */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 50px 0; /* Adjusted padding to reduce the height */
+    background: #FF5733; /* Orange background */
+    color: #fff;
+    position: relative;
+    z-index: 500;
+    margin-top: 100px; /* Ensure separation from the main content */
+    box-sizing: border-box; /* Ensures proper padding and margin calculations */
+}
+
+/* Make sure the footer is pinned to the bottom */
+html, body {
+    height: 100%; /* Ensures the body takes up the full height of the page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensures footer is placed at the end */
+}
+
+body {
+    flex: 1 0 auto; /* Let the body grow and take available space */
+}
+
+.main-content {
+    flex: 1; /* The rest of your content before the footer takes the remaining space */
+}
+
+
+/* Sub-footer */
+.sub-footer {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    text-align: center; /* Center the text */
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 0.8rem; /* Small font size */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a slight lift */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+    margin: 0; /* Ensure no extra space between footer and sub-footer */
+}
+/* Mobile Contact Bar */
+.mobile-contact-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 950;
+}
+
+.sticky {
+    display: flex;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .top-bar .contact-text {
+        display: none;
+    }
+
+    .top-bar a i {
+        font-size: 1.2em;
+    }
+
+    .main-nav ul {
+        display: none;
+    }
+
+    /* Hamburger Menu Icon */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2em;
+        color: #fff;
+        position: fixed; /* Keeps it fixed */
+        right: 20px;
+        top: 10px; /* Move it up to align better with other icons */
+        z-index: 2000;
+        padding: 10px;
+    }
+
+    /* Mobile Menu - Full screen transparent box */
+    .mobile-menu {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%; /* Full height of screen */
+        width: 60%; /* Take up 60% of the screen */
+        background: rgba(0, 0, 0, 0.8); /* Transparent dark background */
+        color: #fff;
+        z-index: 1500;
+        padding-top: 80px; /* Padding from the top so the menu doesn't touch the header */
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for a sleek look */
+    }
+
+    .mobile-menu ul {
+        display: block;
+        padding: 20px;
+    }
+
+    .mobile-menu ul li {
+        margin: 20px 0;
+    }
+
+    .mobile-menu ul li a {
+        font-size: 1.5em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .mobile-menu.show {
+        display: block; /* Show menu when toggled */
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
