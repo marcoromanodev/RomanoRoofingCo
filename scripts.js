@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Initialize EmailJS with your user ID
-    emailjs.init('YOUR_EMAILJS_USER_ID');  // Replace 'YOUR_EMAILJS_USER_ID' with your actual user ID
+    emailjs.init('DZojhFh7ITojx93eX');  // Replace 'YOUR_EMAILJS_USER_ID' with your actual user ID
 
     const contactForm = document.getElementById('contact-form');
     
     contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
         
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        emailjs.sendForm('service_czd6kd3', 'emplate_0h89c3i', this)
             .then(function(response) {
                 alert('Your message was sent successfully!');
                 contactForm.reset();
