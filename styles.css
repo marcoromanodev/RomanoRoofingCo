@@ -151,7 +151,7 @@ ul {
     background-size: cover;
     color: #fff; /* Change text color to white for better contrast */
     font-family: 'Merriweather', serif; /* Apply Merriweather font */
-    max-width: 1200px; /* Limit max width */
+    max-width: 1500px; /* Limit max width */
     margin: 0 auto; /* Center content */
 }
 
@@ -288,12 +288,43 @@ ul {
     margin: 0 auto;
 }
 
+/* Ensure the widget is displayed properly and centered */
+.elfsight-app-2b175fb0-ea99-41dd-b7cb-f38c51c00cf1 {
+    width: 100%;
+    max-width: 100%; /* Allow full width within the section */
+    margin: 0 auto; /* Center the widget */
+    height: auto; /* Allow it to adjust height automatically */
+    overflow: hidden; /* Make sure it doesn't overflow */
+}
+
+/* Add additional styling to blend with previous testimonial styles */
 .testimonial-slides p {
     font-style: italic;
     margin: 20px auto;
     width: 80%;
     text-align: center; /* Ensure centered text */
 }
+
+/* Adjusting iframe or widget container if needed */
+.google-reviews-section iframe {
+    width: 100%;
+    height: auto; /* Let height adjust dynamically */
+    max-height: 400px; /* Limit height to avoid it being too tall */
+    border: none; /* Clean look with no border */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .testimonials .testimonial-slides {
+        padding: 1.5rem 0.5rem; /* Adjust padding for smaller screens */
+        max-width: 90%; /* Ensure it fits well on smaller screens */
+    }
+
+    .elfsight-app-2b175fb0-ea99-41dd-b7cb-f38c51c00cf1 {
+        max-width: 100%;
+    }
+}
+
 
 /* Carousel styling */
 .carousel-container {
@@ -400,13 +431,14 @@ ul {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 50px 0; /* Adjusted padding to reduce the height */
+    padding: 40px 0; /* Adjusted padding to reduce the height */
     background: #FF5733; /* Orange background */
     color: #fff;
     position: relative;
     z-index: 500;
     margin-top: 100px; /* Ensure separation from the main content */
     box-sizing: border-box; /* Ensures proper padding and margin calculations */
+    width: 100%;
 }
 
 /* Make sure the footer is pinned to the bottom */
@@ -426,21 +458,22 @@ body {
     flex: 1; /* The rest of your content before the footer takes the remaining space */
 }
 
-
 /* Sub-footer */
 .sub-footer {
     background-color: white; /* White background */
     color: black; /* Black text */
     text-align: center; /* Center the text */
-    padding: 1rem 0;
+    padding: 0.8rem 0; /* Further reduced padding to decrease the height */
     width: 100%;
-    position: relative;
-    bottom: 0;
     font-size: 0.8rem; /* Small font size */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a slight lift */
     box-sizing: border-box; /* Include padding and border in width calculations */
-    margin: 0; /* Ensure no extra space between footer and sub-footer */
+    position: relative; /* Prevent overlap with other elements */
+    bottom: 0;
+    left: 0;
+    margin-top: 20px; /* Optional: Adjust if you want a bit of separation */
 }
+
 /* Mobile Contact Bar */
 .mobile-contact-bar {
     position: fixed;
@@ -451,12 +484,17 @@ body {
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
-    z-index: 950;
+    padding: 12px 0;
+    z-index: 950; /* Ensure it is above other content */
 }
 
 .sticky {
     display: flex;
+}
+
+/* Padding for body to prevent the mobile contact bar from covering content */
+body {
+    padding-bottom: 70px; /* Make sure there's space for the mobile contact bar */
 }
 
 /* Mobile responsiveness */
@@ -531,5 +569,6 @@ body {
         display: none;
     }
 }
+
 
 
