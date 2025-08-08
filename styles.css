@@ -115,7 +115,7 @@ ul {
 .main-banner {
     background: url('2.jpeg') no-repeat center center/cover; /* Background for the main banner */
     text-align: center;
-    padding: 60px 20px;
+    padding: 140px 20px 60px; /* Extra top padding keeps quote clear of fixed header */
     margin-top: 0;
     color: #fff;
     font-family: 'Merriweather', serif;
@@ -654,6 +654,7 @@ body {
 
     .main-banner {
         margin-top: 0;
+        padding-top: 100px; /* Add breathing room above quote on mobile */
     }
 
     .service-detail {
