@@ -444,6 +444,9 @@ ul {
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .btn.careers-btn:hover {
