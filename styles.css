@@ -469,7 +469,7 @@ ul {
     color: #fff;
     position: relative;
     z-index: 500;
-    margin-top: 100px; /* Ensure separation from the main content */
+    margin-top: 150px; /* Ensure separation from the main content */
     box-sizing: border-box; /* Ensures proper padding and margin calculations */
     width: 100%;
 }
