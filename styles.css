@@ -403,6 +403,52 @@ ul {
 .service-detail .service-icon {
     color: #FF5733;
 }
+
+/* Service detail table styling */
+.service-detail table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.service-detail th,
+.service-detail td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Careers section styling */
+.careers-section .careers-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+.careers-section ul {
+    list-style: disc;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Orange careers button */
+.btn.careers-btn {
+    background: #FF5733;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn.careers-btn:hover {
+    background: #e14f2d;
+}
 /* Carousel styling */
 .carousel-container {
     display: flex;
