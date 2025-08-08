@@ -33,7 +33,7 @@ ul {
 /* Header */
 .header {
     background: #FF5733;
-    color: #000;
+    color: #fff;
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
@@ -57,6 +57,11 @@ ul {
     color: #fff;
     padding: 0 10px;
     font-size: 0.9em;
+    transition: text-shadow 0.3s;
+}
+
+.top-bar a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 .top-bar .contact-text {
     display: none;
@@ -87,6 +92,22 @@ ul {
 
 .main-nav ul li a {
     padding: 0 15px;
+    color: #fff;
+    transition: text-shadow 0.3s;
+}
+
+.main-nav ul li a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+.top-bar a i,
+.hamburger i {
+    transition: text-shadow 0.3s;
+}
+
+.top-bar a:hover i,
+.hamburger:hover i {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
 /* Main Banner */
@@ -176,8 +197,7 @@ ul {
     background-size: cover;
     color: #fff; /* Change text color to white for better contrast */
     font-family: 'Merriweather', serif; /* Apply Merriweather font */
-    max-width: 1500px; /* Limit max width */
-    margin: 0 auto; /* Center content */
+    width: 100%;
 }
 
 .about::before {
@@ -521,6 +541,15 @@ body {
     z-index: 950; /* Ensure it is above other content */
 }
 
+.mobile-contact-bar a {
+    color: white;
+    transition: text-shadow 0.3s;
+}
+
+.mobile-contact-bar a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
 .sticky {
     display: flex;
 }
@@ -586,6 +615,15 @@ body {
         display: block;
         color: #fff;
         text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .mobile-menu ul li a:hover {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    }
+
+    .mobile-menu ul li a.active {
+        color: orange;
     }
 
     .mobile-menu.show {
@@ -600,6 +638,14 @@ body {
 
     .mobile-menu {
         display: none;
+    }
+
+    .header {
+        padding: 40px 20px;
+    }
+
+    .logo {
+        max-height: 70px;
     }
 }
 

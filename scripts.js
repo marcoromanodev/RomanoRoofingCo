@@ -58,6 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.addEventListener('click', function (e) {
             e.stopPropagation();
         });
+
+        // Highlight active link in mobile menu
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                mobileLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
     }
 
     // Carousel functionality
