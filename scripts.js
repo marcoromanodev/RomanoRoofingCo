@@ -78,25 +78,22 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const totalImages = carouselImages.length;
     const imagesToShow = 3;  // Showing 3 images at a time
+    const maxIndex = totalImages - imagesToShow;
     let imageWidth = carouselImages[0].clientWidth + 20; // Image width + margin/padding
 
     // Right arrow click event
     if (rightArrow) {
         rightArrow.addEventListener('click', () => {
-            if (currentIndex < totalImages - imagesToShow) {
-                currentIndex++;
-                updateCarousel();
-            }
+            currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+            updateCarousel();
         });
     }
 
     // Left arrow click event
     if (leftArrow) {
         leftArrow.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
+            currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+            updateCarousel();
         });
     }
 
