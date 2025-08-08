@@ -7,6 +7,15 @@ body, h1, h2, h3, p, ul, li, a, img {
     font: inherit;
     vertical-align: baseline;
 }
+h1, h2, h3 {
+    font-weight: bold;
+}
+section h2 {
+    font-size: 2em;
+}
+section h3 {
+    font-size: 1.5em;
+}
 body {
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
@@ -48,6 +57,9 @@ ul {
     color: #fff;
     padding: 0 10px;
     font-size: 0.9em;
+}
+.top-bar .contact-text {
+    display: none;
 }
 
 .logo-container {
@@ -103,6 +115,19 @@ ul {
     cursor: pointer;
 }
 .btn.primary-btn:hover {
+    background: #0056b3;
+}
+.btn.read-more-btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+.btn.read-more-btn:hover {
     background: #0056b3;
 }
 
@@ -324,8 +349,16 @@ ul {
         max-width: 100%;
     }
 }
-
-
+/* Service Detail */
+.service-detail {
+    text-align: center;
+    padding: 120px 20px 40px;
+}
+.service-detail p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 /* Carousel styling */
 .carousel-container {
     display: flex;
