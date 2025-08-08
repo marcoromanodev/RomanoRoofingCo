@@ -108,4 +108,12 @@ document.addEventListener("DOMContentLoaded", function () {
         imageWidth = carouselImages[0].clientWidth + 20;
         updateCarousel();  // Recalculate and update the transform position
     });
+
+    // Ensure mailto links trigger email client on desktop
+    const emailLinks = document.querySelectorAll('a.email-link');
+    emailLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            window.location.href = this.href;
+        });
+    });
 });
