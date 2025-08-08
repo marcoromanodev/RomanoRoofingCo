@@ -71,7 +71,8 @@ ul {
 .logo-container {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
 }
 
@@ -620,7 +621,7 @@ body {
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 12px 0;
+    padding: 16px 0;
     z-index: 950; /* Ensure it is above other content */
 }
 
@@ -644,7 +645,7 @@ body {
 
 /* Padding for body to prevent the mobile contact bar from covering content */
 body {
-    padding-bottom: 70px; /* Make sure there's space for the mobile contact bar */
+    padding-bottom: 80px; /* Make sure there's space for the mobile contact bar */
 }
 
 /* Mobile responsiveness */
