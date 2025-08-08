@@ -21,6 +21,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     padding-bottom: 100px;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -115,7 +116,7 @@ ul {
     background: url('2.jpeg') no-repeat center center/cover; /* Background for the main banner */
     text-align: center;
     padding: 60px 20px;
-    margin-top: 120px;
+    margin-top: 100px;
     color: #fff;
     font-family: 'Merriweather', serif;
     position: relative;
@@ -198,7 +199,7 @@ ul {
     background-size: cover;
     color: #fff; /* Change text color to white for better contrast */
     font-family: 'Merriweather', serif; /* Apply Merriweather font */
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .about h2 {
@@ -382,11 +383,11 @@ ul {
 /* Service Detail */
 .service-detail {
     text-align: center;
-    padding: 120px 20px 40px;
+    padding: 100px 20px 40px;
 }
 .service-detail p {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     line-height: 1.6;
 }
 /* Carousel styling */
@@ -636,6 +637,14 @@ body {
 
     .mobile-menu ul li a.active {
         color: orange;
+    }
+
+    .main-banner {
+        margin-top: 80px;
+    }
+
+    .service-detail {
+        padding-top: 80px;
     }
 
     .mobile-menu.show {
