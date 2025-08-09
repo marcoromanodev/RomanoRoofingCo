@@ -22,22 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Sticky mobile bar logic
-    const mobileBar = document.getElementById('mobile-bar');
-    const stickyOffset = mobileBar ? mobileBar.offsetTop : 0;
-
-    function stickyMobileBar() {
-        if (window.pageYOffset >= stickyOffset) {
-            mobileBar.classList.add('sticky');
-        } else {
-            mobileBar.classList.remove('sticky');
-        }
-    }
-
-    window.onscroll = function () {
-        stickyMobileBar();
-    };
-
     // Hamburger menu functionality
     const mobileMenu = document.querySelector('.mobile-menu');
     const hamburger = document.querySelector('.hamburger');
