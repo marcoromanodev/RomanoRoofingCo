@@ -21,7 +21,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     padding-top: var(--header-height, 0px);
-    padding-bottom: 60px;
+    /* Leave room for the mobile contact bar */
+    padding-bottom: 100px;
     overflow-x: hidden;
 }
 a {
@@ -715,6 +716,16 @@ body {
 }
 
 @media (min-width: 769px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .mobile-contact-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
     .hamburger {
         display: none;
     }
