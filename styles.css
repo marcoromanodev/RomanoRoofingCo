@@ -470,7 +470,8 @@ ul {
     justify-content: center;
     position: relative;
     width: 100%; /* Full width of the parent */
-    overflow: hidden; /* Prevent any overflow on the sides */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: visible; /* Allow vertical overflow for captions */
     margin: 0 auto;
     margin-top: 2rem;
 }
@@ -713,7 +714,8 @@ body {
         transform: translateX(-16px); /* Align logo with page content */
     }
     .sub-footer {
-        padding-bottom: calc(0.4rem + 50px); /* Reduce excess whitespace above mobile bar */
+        padding-top: calc(0.4rem + 50px); /* Space above sub-footer instead of below */
+        padding-bottom: 0.4rem; /* Minimal bottom padding */
     }
 }
 
@@ -727,7 +729,7 @@ body {
     }
 
     .header {
-        padding: 35px 20px;
+        padding: 45px 20px; /* Taller header on desktop */
     }
 
     .logo {
