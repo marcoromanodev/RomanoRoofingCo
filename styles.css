@@ -21,7 +21,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     padding-top: var(--header-height, 0px);
-    padding-bottom: 0;
+    padding-bottom: 60px;
     overflow-x: hidden;
 }
 a {
@@ -107,7 +107,7 @@ ul {
 .main-banner {
     background: url('2.jpeg') no-repeat center center/cover;
     text-align: center;
-    padding: 100px 20px 60px;
+    padding: 160px 20px 60px;
     color: #fff;
     font-family: 'Merriweather', serif;
     position: relative;
@@ -124,7 +124,16 @@ ul {
 
 /* Mobile Contact Bar */
 .mobile-contact-bar {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 950;
 }
 
 .mobile-contact-bar .service-icon {
@@ -385,7 +394,7 @@ ul {
 /* Service Detail */
 .service-detail {
     text-align: center;
-    padding: 80px 20px 40px;
+    padding: 120px 20px 40px;
 }
 .service-detail p {
     max-width: 800px;
@@ -624,7 +633,8 @@ body {
     background-color: white; /* White background */
     color: black; /* Black text */
     text-align: center; /* Center the text */
-    padding: 0.2rem 0; /* Further reduced padding to decrease the height */
+    padding-top: 0.4rem;
+    padding-bottom: calc(0.4rem + 2px);
     width: 100%;
     font-size: 0.8rem; /* Small font size */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a slight lift */
@@ -690,30 +700,9 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .service-detail {
-        padding: 120px 20px 40px;
-    }
     .careers-section,
     .service-area-section {
         padding-top: 120px;
-    }
-
-
-    .mobile-contact-bar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: #333;
-        color: #fff;
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0;
-        z-index: 950;
-    }
-
-    body {
-        padding-bottom: 60px;
     }
 
     .main-banner {
@@ -722,10 +711,6 @@ body {
 
     .logo-container {
         transform: translateX(-16px); /* Align logo with page content */
-    }
-    .sub-footer {
-        padding-top: 0.4rem;
-        padding-bottom: calc(0.4rem + 2px);
     }
 }
 
