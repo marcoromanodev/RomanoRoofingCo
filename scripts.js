@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+    function adjustHeaderOffset() {
+        const header = document.querySelector('.header');
+        if (header) {
+            const headerHeight = header.offsetHeight;
+            document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+        }
+    }
+    adjustHeaderOffset();
+    window.addEventListener('resize', adjustHeaderOffset);
+
     // Initialize EmailJS
     if (typeof emailjs !== 'undefined') {
         // Initialize EmailJS with your public key
