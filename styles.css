@@ -476,7 +476,8 @@ ul {
 }
 
 .carousel {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
     width: 100%;
     max-width: 1000px; /* Limit the width on larger screens */
     position: relative;
