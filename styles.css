@@ -421,7 +421,8 @@ ul {
 }
 
 /* Careers section styling */
-.careers-section {
+.careers-section,
+.service-area-section {
     text-align: center;
     padding-top: 160px;
 }
@@ -569,7 +570,7 @@ ul {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 40px 0; /* Adjusted padding to reduce the height */
+    padding: 40px 0 0; /* Adjusted padding to remove bottom space */
     background: #FF5733; /* Orange background */
     color: #fff;
     position: relative;
@@ -609,7 +610,7 @@ body {
     position: relative; /* Prevent overlap with other elements */
     bottom: 0;
     left: 0;
-    margin-top: 20px; /* Optional: Adjust if you want a bit of separation */
+    margin-top: 0;
 }
 
 /* Mobile Menu */
@@ -670,6 +671,11 @@ body {
     .service-detail {
         padding: 60px 20px 40px;
     }
+    .careers-section,
+    .service-area-section {
+        padding-top: 120px;
+    }
+
 
     .mobile-contact-bar {
         position: fixed;
