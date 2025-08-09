@@ -418,6 +418,7 @@ ul {
 /* Careers section styling */
 .careers-section {
     text-align: center;
+    padding-top: 120px;
 }
 
 .careers-section .careers-image {
@@ -680,6 +681,10 @@ body {
 
     body {
         padding-bottom: 0;
+    }
+
+    .main-banner {
+        padding-top: 120px;
     }
 
     .logo-container {
