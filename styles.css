@@ -127,6 +127,11 @@ ul {
     display: none;
 }
 
+.mobile-contact-bar .service-icon {
+    color: #FF5733;
+    margin-right: 5px;
+}
+
 .btn.primary-btn {
     background: #007BFF;
     color: #fff;
@@ -418,7 +423,7 @@ ul {
 /* Careers section styling */
 .careers-section {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 160px;
 }
 
 .careers-section .careers-image {
