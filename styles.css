@@ -489,11 +489,21 @@ ul {
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-img {
+.carousel-item {
     width: 33%; /* Show 2-3 images per view */
+    text-align: center;
+}
+
+.carousel-img {
+    width: 100%;
     margin: 0;
     height: 300px;
     object-fit: cover;
+}
+
+.carousel-title {
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 /* Adjusting button visibility */
@@ -527,7 +537,7 @@ ul {
         width: 95%;
     }
 
-    .carousel-img {
+    .carousel-item {
         width: 90%;
     }
 
@@ -602,7 +612,7 @@ body {
     background-color: white; /* White background */
     color: black; /* Black text */
     text-align: center; /* Center the text */
-    padding: 0.8rem 0; /* Further reduced padding to decrease the height */
+    padding: 0.4rem 0; /* Further reduced padding to decrease the height */
     width: 100%;
     font-size: 0.8rem; /* Small font size */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a slight lift */
@@ -702,7 +712,7 @@ body {
         transform: translateX(-16px); /* Align logo with page content */
     }
     .sub-footer {
-        padding-bottom: calc(0.8rem + 60px); /* Ensure visibility above mobile bar */
+        padding-bottom: calc(0.4rem + 60px); /* Ensure visibility above mobile bar */
     }
 }
 
