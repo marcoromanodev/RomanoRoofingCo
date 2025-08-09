@@ -51,8 +51,11 @@ ul {
 .logo-container {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -98,7 +101,7 @@ ul {
 .main-banner {
     background: url('2.jpeg') no-repeat center center/cover;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px 60px;
     color: #fff;
     font-family: 'Merriweather', serif;
     position: relative;
