@@ -37,7 +37,7 @@ ul {
 .header {
     background: #FF5733;
     color: #fff;
-    padding: 20px 20px;
+    padding: 25px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -605,20 +605,20 @@ body {
     display: none; /* Hidden by default */
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%; /* Full height of screen */
     width: 60%; /* Take up 60% of the screen */
     background: rgba(0, 0, 0, 0.8); /* Transparent dark background */
     color: #fff;
     z-index: 1500;
     padding-top: var(--header-height, 80px); /* Offset from header */
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for a sleek look */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for a sleek look */
 }
 
 .close-menu {
     position: absolute;
     top: 15px;
-    left: 15px;
+    right: 15px;
     font-size: 1.8em;
     cursor: pointer;
 }
@@ -626,6 +626,7 @@ body {
 .mobile-menu ul {
     display: block;
     padding: 20px;
+    text-align: left;
 }
 
 .mobile-menu ul li {
@@ -686,7 +687,7 @@ body {
     }
 
     .header {
-        padding: 25px 20px;
+        padding: 35px 20px;
     }
 
     .logo {

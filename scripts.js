@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const header = document.querySelector('.header');
         if (header) {
             const headerHeight = header.offsetHeight;
-            document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+            const extraOffset = 10;
+            document.documentElement.style.setProperty('--header-height', `${headerHeight + extraOffset}px`);
         }
     }
     adjustHeaderOffset();
