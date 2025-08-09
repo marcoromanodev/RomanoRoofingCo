@@ -568,7 +568,7 @@ ul {
     color: #fff;
     position: relative;
     z-index: 500;
-    margin-top: 150px; /* Ensure separation from the main content */
+    margin-top: auto; /* Push footer to the bottom when content is short */
     box-sizing: border-box; /* Ensures proper padding and margin calculations */
     width: 100%;
 }
@@ -679,7 +679,11 @@ body {
     }
 
     body {
-        padding-bottom: 80px;
+        padding-bottom: 0;
+    }
+
+    .logo-container {
+        transform: translateX(-16px); /* Align logo with page content */
     }
 }
 
