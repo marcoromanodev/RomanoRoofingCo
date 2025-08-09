@@ -725,7 +725,7 @@ body {
     }
     .sub-footer {
         padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
+        padding-bottom: calc(0.4rem + 2px);
     }
 }
 
