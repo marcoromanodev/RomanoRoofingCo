@@ -152,6 +152,9 @@ ul {
 .btn.primary-btn:hover {
     background: #0056b3;
 }
+.glow-btn {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+}
 .btn.read-more-btn {
     background: #007BFF;
     color: #fff;
@@ -635,7 +638,7 @@ body {
     color: black; /* Black text */
     text-align: center; /* Center the text */
     padding-top: 0.4rem;
-    padding-bottom: calc(0.4rem + 2px);
+    padding-bottom: calc(0.4rem + 2px + env(safe-area-inset-bottom));
     width: 100%;
     font-size: 0.8rem; /* Small font size */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a slight lift */
@@ -644,6 +647,16 @@ body {
     bottom: 0;
     left: 0;
     margin-top: 5px;
+    margin-bottom: 60px;
+}
+
+.sub-footer a {
+    color: #000;
+    font-weight: bold;
+}
+
+.footer p strong {
+    color: #fff;
 }
 
 /* Mobile Menu */
