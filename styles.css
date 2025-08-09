@@ -494,6 +494,7 @@ ul {
 .carousel-item {
     flex: 0 0 100%;
     text-align: center;
+    position: relative;
 }
 
 .carousel-img {
@@ -501,11 +502,20 @@ ul {
     margin: 0;
     height: 300px;
     object-fit: cover;
+    display: block;
 }
 
 .carousel-title {
-    margin-top: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 /* Adjusting button visibility */
@@ -703,7 +713,7 @@ body {
     }
 
     body {
-        padding-bottom: 0;
+        padding-bottom: 60px;
     }
 
     .main-banner {
@@ -714,8 +724,8 @@ body {
         transform: translateX(-16px); /* Align logo with page content */
     }
     .sub-footer {
-        padding-top: calc(0.4rem + 50px); /* Space above sub-footer instead of below */
-        padding-bottom: 0.4rem; /* Minimal bottom padding */
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
     }
 }
 
