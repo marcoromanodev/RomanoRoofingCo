@@ -20,6 +20,7 @@ body {
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    padding-top: var(--header-height, 0px);
     padding-bottom: 0;
     overflow-x: hidden;
 }
@@ -118,8 +119,7 @@ ul {
 .main-banner {
     background: url('2.jpeg') no-repeat center center/cover; /* Background for the main banner */
     text-align: center;
-    padding: 140px 20px 60px; /* Extra top padding keeps quote clear of fixed header */
-    margin-top: 0;
+    padding: 60px 20px; /* Spacing inside banner */
     color: #fff;
     font-family: 'Merriweather', serif;
     position: relative;
@@ -387,7 +387,7 @@ ul {
 /* Service Detail */
 .service-detail {
     text-align: center;
-    padding: 120px 20px 40px;
+    padding: 60px 20px 40px;
 }
 .service-detail p {
     max-width: 800px;
@@ -671,18 +671,19 @@ body {
     .mobile-menu ul li a.active {
         color: orange;
     }
+    .logo-container,
+    .hamburger {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     .main-banner {
-        margin-top: 0;
-        padding-top: 160px; /* Ensure quote is visible below fixed header */
+        padding: 40px 20px;
     }
 
     .service-detail {
-        padding-top: 160px;
-    }
-
-    .service-detail h2 {
-        padding-top: 10px;
+        padding: 60px 20px 40px;
     }
 
     .mobile-menu.show {
