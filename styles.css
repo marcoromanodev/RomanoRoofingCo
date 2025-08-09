@@ -385,7 +385,7 @@ ul {
 /* Service Detail */
 .service-detail {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 80px 20px 40px;
 }
 .service-detail p {
     max-width: 800px;
@@ -477,7 +477,7 @@ ul {
 
 .carousel {
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     max-width: 1000px; /* Limit the width on larger screens */
     position: relative;
     display: flex;
@@ -490,7 +490,7 @@ ul {
 }
 
 .carousel-item {
-    width: 33%; /* Show 2-3 images per view */
+    flex: 0 0 100%;
     text-align: center;
 }
 
@@ -612,7 +612,7 @@ body {
     background-color: white; /* White background */
     color: black; /* Black text */
     text-align: center; /* Center the text */
-    padding: 0.4rem 0; /* Further reduced padding to decrease the height */
+    padding: 0.2rem 0; /* Further reduced padding to decrease the height */
     width: 100%;
     font-size: 0.8rem; /* Small font size */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a slight lift */
@@ -620,7 +620,7 @@ body {
     position: relative; /* Prevent overlap with other elements */
     bottom: 0;
     left: 0;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 /* Mobile Menu */

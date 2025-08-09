@@ -76,15 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Carousel functionality
     const carousel = document.querySelector('.carousel-images');
-    const carouselImages = document.querySelectorAll('.carousel-img');
+    const carouselItems = document.querySelectorAll('.carousel-item');
     const leftArrow = document.querySelector('.left-arrow');
     const rightArrow = document.querySelector('.right-arrow');
 
     let currentIndex = 0;
-    const totalImages = carouselImages.length;
-    const imagesToShow = 3;  // Showing 3 images at a time
-    const maxIndex = totalImages - imagesToShow;
-    let imageWidth = carouselImages[0].clientWidth + 20; // Image width + margin/padding
+    const totalItems = carouselItems.length;
+    const imagesToShow = 1;  // Show one image at a time
+    const maxIndex = totalItems - imagesToShow;
+    let imageWidth = carouselItems[0].clientWidth;
 
     // Right arrow click event
     if (rightArrow) {
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Update image width on window resize to ensure responsiveness
     window.addEventListener('resize', () => {
-        imageWidth = carouselImages[0].clientWidth + 20;
+        imageWidth = carouselItems[0].clientWidth;
         updateCarousel();  // Recalculate and update the transform position
     });
 
