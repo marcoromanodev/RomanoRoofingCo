@@ -36,12 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Hamburger menu functionality
     const mobileMenu = document.querySelector('.mobile-menu');
     const hamburger = document.querySelector('.hamburger');
+    const closeMenu = document.querySelector('.close-menu');
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', function (e) {
             e.stopPropagation(); // Prevent event bubbling
             mobileMenu.classList.toggle('show'); // Toggle the mobile menu visibility
         });
+
+        if (closeMenu) {
+            closeMenu.addEventListener('click', function (e) {
+                e.stopPropagation();
+                mobileMenu.classList.remove('show');
+            });
+        }
 
         // Close the mobile menu when clicking outside
         window.addEventListener('click', function (event) {
@@ -60,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileLinks.forEach(link => {
             link.addEventListener('click', function () {
                 mobileLinks.forEach(l => l.classList.remove('active'));
+                mobileMenu.classList.remove('show');
                 this.classList.add('active');
             });
         });
