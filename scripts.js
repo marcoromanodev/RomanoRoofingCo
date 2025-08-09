@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialize EmailJS with your user ID
+    // Initialize EmailJS
     if (typeof emailjs !== 'undefined') {
-        emailjs.init('DZojhFh7ITojx93eX');  // Replace with your actual EmailJS user ID
+        // Initialize EmailJS with your public key
+        emailjs.init('Y-XtDjX-x7GuFRumI');
     }
 
     const contactForm = document.getElementById('contact-form');
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
-            emailjs.sendForm('service_czd6kd3', 'template_0h89c3i', this)
+            emailjs.sendForm('service_ae5o7qq', 'template_rd9i0ip', this)
                 .then(function (response) {
                     // Show a "Message Sent!" popup (without refreshing the page)
                     alert('Message Sent!');
