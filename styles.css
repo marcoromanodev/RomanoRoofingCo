@@ -627,6 +627,7 @@ html, body {
 
 body {
     flex: 1 0 auto; /* Let the body grow and take available space */
+    padding-bottom: calc(60px + env(safe-area-inset-bottom)); /* Reserve space for mobile bar */
 }
 
 .main-content {
@@ -647,8 +648,8 @@ body {
     position: relative; /* Prevent overlap with other elements */
     bottom: 0;
     left: 0;
-    margin-top: 5px;
-    margin-bottom: 60px;
+    margin-top: 10px; /* Space above sub-footer */
+    margin-bottom: 0; /* Remove gap below sub-footer */
 }
 
 .sub-footer a {
@@ -731,10 +732,6 @@ body {
 
 /* Keep the mobile contact bar visible on all screen sizes */
 @media (min-width: 769px) {
-    body {
-        padding-bottom: 100px; /* Maintain space for the contact bar */
-    }
-
     .mobile-contact-bar {
         display: flex;
     }
