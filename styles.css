@@ -204,7 +204,7 @@ ul {
     font-size: 2em;
     margin-bottom: 10px;
     display: block;
-    color: orange;
+    color: #FF5733;
 }
 
 .about {
@@ -707,7 +707,7 @@ body {
 }
 
 .mobile-menu ul li a.active {
-    color: orange;
+    color: #FF5733;
 }
 
 .mobile-menu.show {
