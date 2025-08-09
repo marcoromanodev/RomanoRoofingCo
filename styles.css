@@ -610,7 +610,7 @@ body {
     position: relative; /* Prevent overlap with other elements */
     bottom: 0;
     left: 0;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 /* Mobile Menu */
@@ -700,6 +700,9 @@ body {
 
     .logo-container {
         transform: translateX(-16px); /* Align logo with page content */
+    }
+    .sub-footer {
+        padding-bottom: calc(0.8rem + 60px); /* Ensure visibility above mobile bar */
     }
 }
 
