@@ -37,9 +37,10 @@ ul {
 .header {
     background: #FF5733;
     color: #fff;
-    padding: 15px 20px;
+    padding: 20px 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -65,26 +66,11 @@ ul {
     cursor: pointer;
 }
 
-.contact-icons {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-left: auto;
-}
-
-.contact-icons a {
-    color: #fff;
-    font-size: 1.5em;
+.hamburger i {
     transition: text-shadow 0.3s;
 }
 
-.hamburger i,
-.contact-icons a i {
-    transition: text-shadow 0.3s;
-}
-
-.hamburger:hover i,
-.contact-icons a:hover i {
+.hamburger:hover i {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
@@ -110,32 +96,26 @@ ul {
 
 /* Main Banner */
 .main-banner {
-    position: relative;
+    background: url('2.jpeg') no-repeat center center/cover;
     text-align: center;
+    padding: 60px 20px;
     color: #fff;
     font-family: 'Merriweather', serif;
+    position: relative;
 }
 
-.banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.banner-content p {
+.main-banner p {
     font-size: 1.75em;
     margin-bottom: 30px;
     font-weight: 600;
     font-style: italic;
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 87, 51, 0.6);
+}
+
+/* Mobile Contact Bar */
+.mobile-contact-bar {
+    display: none;
 }
 
 .btn.primary-btn {
@@ -673,6 +653,23 @@ body {
 @media (max-width: 768px) {
     .service-detail {
         padding: 60px 20px 40px;
+    }
+
+    .mobile-contact-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        z-index: 950;
+    }
+
+    body {
+        padding-bottom: 80px;
     }
 }
 
