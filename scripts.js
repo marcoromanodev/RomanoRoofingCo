@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileLinks.forEach(link => {
             link.addEventListener('click', function () {
                 mobileLinks.forEach(l => l.classList.remove('active'));
-                mobileMenu.classList.remove('show');
                 this.classList.add('active');
             });
         });

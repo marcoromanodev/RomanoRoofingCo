@@ -37,7 +37,7 @@ ul {
 .header {
     background: #FF5733;
     color: #fff;
-    padding: 25px 20px;
+    padding: 35px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,17 +50,23 @@ ul {
 
 .logo-container {
     position: absolute;
-    left: 50%;
     top: 0;
     bottom: 0;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    pointer-events: none;
 }
 
 .logo {
     max-height: 80px;
     display: block;
+}
+
+.logo-container a {
+    pointer-events: auto;
 }
 
 .hamburger {
@@ -101,7 +107,7 @@ ul {
 .main-banner {
     background: url('2.jpeg') no-repeat center center/cover;
     text-align: center;
-    padding: 80px 20px 60px;
+    padding: 100px 20px 60px;
     color: #fff;
     font-family: 'Merriweather', serif;
     position: relative;
