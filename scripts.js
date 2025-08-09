@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     adjustHeaderOffset();
     window.addEventListener('resize', adjustHeaderOffset);
+    window.addEventListener('load', adjustHeaderOffset);
 
     // Initialize EmailJS
     if (typeof emailjs !== 'undefined') {
