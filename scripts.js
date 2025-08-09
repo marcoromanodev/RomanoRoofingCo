@@ -34,10 +34,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Hamburger menu functionality
+    // Hamburger menu and responsive navigation
     const mobileMenu = document.querySelector('.mobile-menu');
     const hamburger = document.querySelector('.hamburger');
     const closeMenu = document.querySelector('.close-menu');
+    const desktopNav = document.querySelector('.desktop-nav');
+    const logoContainer = document.querySelector('.logo-container');
+
+    // Switch to hamburger menu if the logo overlaps navigation links
+    function updateNavDisplay() {
+        if (!desktopNav || !hamburger || !logoContainer) return;
+        const navRect = desktopNav.getBoundingClientRect();
+        const logoRect = logoContainer.getBoundingClientRect();
+
+        if (navRect.left < logoRect.right + 20) {
+            desktopNav.style.display = 'none';
+            hamburger.style.display = 'block';
+        } else {
+            desktopNav.style.display = 'block';
+            hamburger.style.display = 'none';
+        }
+    }
+
+    updateNavDisplay();
+    window.addEventListener('resize', updateNavDisplay);
+    window.addEventListener('load', updateNavDisplay);
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', function (e) {

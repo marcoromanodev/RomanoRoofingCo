@@ -715,13 +715,14 @@ body {
     }
 }
 
+/* Keep the mobile contact bar visible on all screen sizes */
 @media (min-width: 769px) {
     body {
-        padding-bottom: 0;
+        padding-bottom: 100px; /* Maintain space for the contact bar */
     }
 
     .mobile-contact-bar {
-        display: none;
+        display: flex;
     }
 }
 
