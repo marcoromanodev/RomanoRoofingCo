@@ -126,6 +126,35 @@ ul {
     text-shadow: 0 0 10px rgba(255, 87, 51, 0.6);
 }
 
+.google-rating-widget {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.google-rating-widget .rating-value {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.google-rating-widget .stars {
+    display: inline-flex;
+    color: #FFD700;
+}
+
+.google-rating-widget .stars i {
+    margin-right: 2px;
+}
+
+.google-rating-widget .reviews-text {
+    margin-left: 5px;
+    text-decoration: underline;
+    font-size: 0.85em;
+}
+
 /* Mobile Contact Bar */
 .mobile-contact-bar {
     position: fixed;
