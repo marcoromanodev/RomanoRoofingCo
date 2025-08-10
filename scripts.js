@@ -142,4 +142,28 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = this.href;
         });
     });
+
+    // Google reviews widget
+    const reviewWidget = document.querySelector('.google-rating-widget');
+    if (reviewWidget) {
+        const ratingValue = 4.3; // Update with actual rating if available
+        const reviewsCount = 25; // Update with actual number of reviews
+        const starsContainer = reviewWidget.querySelector('.stars');
+        const ratingSpan = reviewWidget.querySelector('.rating-value');
+        const reviewsText = reviewWidget.querySelector('.reviews-text');
+
+        ratingSpan.textContent = ratingValue.toFixed(1);
+        reviewsText.textContent = `(${reviewsCount} Ratings & Reviews)`;
+
+        const fullStars = Math.floor(ratingValue);
+        for (let i = 0; i < 5; i++) {
+            const star = document.createElement('i');
+            if (i < fullStars) {
+                star.classList.add('fas', 'fa-star');
+            } else {
+                star.classList.add('far', 'fa-star');
+            }
+            starsContainer.appendChild(star);
+        }
+    }
 });
