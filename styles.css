@@ -127,9 +127,8 @@ ul {
 }
 
 .google-rating-widget {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     font-size: 0.9em;
     color: #fff;
     margin-bottom: 20px;
@@ -142,11 +141,16 @@ ul {
 
 .google-rating-widget .stars {
     display: inline-flex;
-    color: #FFD700;
 }
 
 .google-rating-widget .stars i {
     margin-right: 2px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.google-rating-widget .stars i.filled {
+    color: #FFD700;
 }
 
 .google-rating-widget .reviews-text {

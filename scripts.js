@@ -156,14 +156,34 @@ document.addEventListener("DOMContentLoaded", function () {
         reviewsText.textContent = `(${reviewsCount} Ratings & Reviews)`;
 
         const fullStars = Math.floor(ratingValue);
+        const hasHalfStar = ratingValue - fullStars >= 0.5;
+
+        // create empty stars
         for (let i = 0; i < 5; i++) {
             const star = document.createElement('i');
-            if (i < fullStars) {
-                star.classList.add('fas', 'fa-star');
-            } else {
-                star.classList.add('far', 'fa-star');
-            }
+            star.classList.add('far', 'fa-star');
             starsContainer.appendChild(star);
         }
+
+        // animate stars filling
+        let index = 0;
+        const starElements = starsContainer.children;
+
+        function fillStars() {
+            if (index < fullStars) {
+                const star = starElements[index];
+                star.classList.replace('far', 'fas');
+                star.classList.add('filled');
+                index++;
+                setTimeout(fillStars, 200);
+            } else if (hasHalfStar && index < starElements.length) {
+                const star = starElements[index];
+                star.classList.replace('far', 'fas');
+                star.classList.remove('fa-star');
+                star.classList.add('fa-star-half-alt', 'filled');
+            }
+        }
+
+        fillStars();
     }
 });
